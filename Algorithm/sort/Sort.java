@@ -1,7 +1,8 @@
-package cn.superming.sort;
+package cn.superming.Algorithm.sort;
 
 
-import java.util.Random;
+import cn.superming.utils.utils;
+import cn.superming.DataStructure.MinHeap;
 
 public class Sort {
     private static void swap(int[] arr, int a, int b){
@@ -157,29 +158,15 @@ public class Sort {
 
     public static void main(String[] args) {
         int n = 20;
-        int[] arr = generateArray(n);
+        int[] arr = utils.generateArray(n);
 //        Sort.selectSort(arr);
 //        Sort.insertSort(arr);
 //        Sort.mergeSort(arr);
 //        Sort.quickSort2ways(arr);
 //        Sort.quickSort3ways(arr);
         Sort.heapSort(arr);
-        printArray(arr);
+        utils.printArray(arr);
     }
 
-    public static int[] generateArray(int n){
-        int[] arr = new int[n];
-        Random rand = new Random();
-        for (int i = 0; i < n; i++){
-            arr[i] = rand.nextInt(n);
-        }
-        return arr;
-    }
 
-    public static void printArray(int[] arr){
-        for (int i : arr) {
-            System.out.print(arr[i] + " ");
-        }
-        System.out.println();
-    }
 }
