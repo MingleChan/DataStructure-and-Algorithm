@@ -1,8 +1,5 @@
 package cn.superming.DataStructure;
 
-import cn.superming.utils.utils;
-
-
 public class MinHeap {
     private int[] data;
     private int capacity;
