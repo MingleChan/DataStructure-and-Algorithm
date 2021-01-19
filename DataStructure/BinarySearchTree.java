@@ -1,5 +1,8 @@
 package cn.superming.DataStructure;
 
+import java.util.ArrayDeque;
+import java.util.Queue;
+
 public class BinarySearchTree {
     class Node {
         int key;
@@ -51,6 +54,17 @@ public class BinarySearchTree {
 
     public void postOrder(){
         postOrder(root);
+    }
+
+    public void levelOrder(){
+        Queue<Node> queue = new ArrayDeque<>();
+        queue.add(root);
+        while (!queue.isEmpty()){
+            Node node = queue.poll();
+            System.out.println(node.key + " : " + node.value);
+            if (node.left != null) queue.add(node.left);
+            if (node.right != null) queue.add(node.right);
+        }
     }
 
     private Node insert(Node node, int key, int value) {
