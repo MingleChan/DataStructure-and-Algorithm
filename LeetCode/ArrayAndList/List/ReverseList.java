@@ -3,7 +3,7 @@ package ArrayAndList.List;
 /**
  * LeetCode 206. 反转链表
  */
-public class ReverseList {
+class ReverseList {
     /**
      * 迭代法实现反转链表
      * @param head
