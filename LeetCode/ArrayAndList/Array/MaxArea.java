@@ -1,6 +1,6 @@
-package LeetCode.ArrayAndList;
-/*
-  leetcode 11. 盛水最多的容器
+package ArrayAndList.Array;
+/**
+ * LeetCode 11. 盛水最多的容器
  */
 class MaxArea {
     public int maxArea(int[] height) {
