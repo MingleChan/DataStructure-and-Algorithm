@@ -3,7 +3,7 @@ package ArrayAndList.List;
 /**
  * LeetCode 24. 两两交换链表中的节点
  */
-public class SwapPairs {
+class SwapPairs {
     public ListNode swapPairs(ListNode head) {
         if(head == null || head.next == null)
             return head;
