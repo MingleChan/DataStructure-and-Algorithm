@@ -15,21 +15,14 @@ class GetIntersectionNode {
     }
 
     public static void main(String[] args) {
-        ListNode A1 = new ListNode(4);
-        ListNode A2 = new ListNode(1);
-        ListNode B1 = new ListNode(5);
-        ListNode B2 = new ListNode(0);
-        ListNode B3 = new ListNode(1);
-        ListNode C1 = new ListNode(8);
-        ListNode C2 = new ListNode(4);
         ListNode C3 = new ListNode(5);
-        C1.next = C2;
-        C2.next = C3;
-        A1.next = A2;
-        A2.next = C1;
-        B1.next = B2;
-        B2.next = B3;
-        B3.next = C1;
+        ListNode C2 = new ListNode(4, C3);
+        ListNode C1 = new ListNode(8, C2);
+        ListNode A2 = new ListNode(1, C1);
+        ListNode A1 = new ListNode(4, A2);
+        ListNode B3 = new ListNode(1, C1);
+        ListNode B2 = new ListNode(0, B3);
+        ListNode B1 = new ListNode(5, B2);
         GetIntersectionNode g = new GetIntersectionNode();
         ListNode cur = g.getIntersectionNode(A1, B1);
         StringBuilder sb = new StringBuilder("[");
