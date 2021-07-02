@@ -65,17 +65,6 @@ class MergeTwoLists {
 
         MergeTwoLists m = new MergeTwoLists();
         ListNode cur = m.mergeTwoLists1(A1, B1);
-        StringBuilder sb = new StringBuilder("[");
-        while (cur != null) {
-            sb.append(cur.val);
-            sb.append(',');
-            cur = cur.next;
-        }
-        if (sb.length() == 1)
-            sb.append(']');
-        else
-            sb.setCharAt(sb.length()-1,']');
-        String res = sb.toString();
-        System.out.println(res);
+        ListNode.printList(cur);
     }
 }
