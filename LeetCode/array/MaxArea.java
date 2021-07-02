@@ -1,4 +1,4 @@
-package ArrayAndList.Array;
+package array;
 /**
  * LeetCode 11. 盛水最多的容器
  */

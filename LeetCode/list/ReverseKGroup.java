@@ -1,4 +1,4 @@
-package ArrayAndList.List;
+package list;
 
 /**
  * LeetCode 25. K 个一组翻转链表

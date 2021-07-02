@@ -1,4 +1,4 @@
-package ArrayAndList.List;
+package list;
 
 /**
  * LeetCode 160. 相交链表

@@ -1,4 +1,4 @@
-package ArrayAndList.List;
+package list;
 
 public class ListNode {
     int val;
