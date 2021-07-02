@@ -1,6 +1,6 @@
 package array;
 /**
- * LeetCode 11. 盛水最多的容器
+ * 11. 盛水最多的容器
  */
 class MaxArea {
     public int maxArea(int[] height) {
