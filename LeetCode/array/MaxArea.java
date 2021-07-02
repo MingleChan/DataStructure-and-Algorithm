@@ -17,4 +17,11 @@ class MaxArea {
         }
         return max;
     }
+
+    public static void main(String[] args) {
+        int[] height = {1,8,6,2,5,4,8,3,7};
+        MaxArea m = new MaxArea();
+        int res = m.maxArea(height);
+        System.out.println(res);
+    }
 }
