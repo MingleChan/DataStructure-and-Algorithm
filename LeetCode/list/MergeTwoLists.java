@@ -65,6 +65,7 @@ class MergeTwoLists {
 
         MergeTwoLists m = new MergeTwoLists();
         ListNode cur = m.mergeTwoLists1(A1, B1);
+//        ListNode cur = m.mergeTwoLists1(A1, B1);
         ListNode.printList(cur);
     }
 }
