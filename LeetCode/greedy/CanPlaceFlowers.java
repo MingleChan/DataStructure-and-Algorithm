@@ -1,6 +1,9 @@
 package greedy;
 
-public class CanPlaceFlowers {
+/**
+ * 605. 种花问题
+ */
+class CanPlaceFlowers {
     public static void main(String[] args) {
         int[] flowerbed = {1, 0, 0, 0, 0, 1};
         int n = 1;
