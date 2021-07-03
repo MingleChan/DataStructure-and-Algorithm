@@ -1,8 +1,9 @@
 package greedy;
 
-import java.util.Arrays;
-
-public class Candy {
+/**
+ * 135. 分发糖果
+ */
+class Candy {
     public int candy(int[] ratings) {
         int[] candyArr = new int[ratings.length];
         candyArr[0] = 1;
