@@ -1,7 +1,7 @@
 package list;
 
 /**
- * LeetCode 206. 反转链表
+ * 206. 反转链表
  */
 class ReverseList {
     /**
@@ -35,5 +35,16 @@ class ReverseList {
         head.next.next = head;
         head.next = null;
         return newHead;
+    }
+
+    public static void main(String[] args) {
+        ListNode L5 = new ListNode(5);
+        ListNode L4 = new ListNode(4, L5);
+        ListNode L3 = new ListNode(3, L4);
+        ListNode L2 = new ListNode(2, L3);
+        ListNode L1 = new ListNode(1, L2);
+        ReverseList r = new ReverseList();
+        ListNode head = r.reverseList1(L1);
+        ListNode.printList(head);
     }
 }
