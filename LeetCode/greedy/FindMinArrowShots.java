@@ -1,8 +1,10 @@
 package greedy;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
+/**
+ * 452. 用最少数量的箭引爆气球
+ */
 public class FindMinArrowShots {
     public int findMinArrowShots(int[][] points) {
         if(points.length == 0)
