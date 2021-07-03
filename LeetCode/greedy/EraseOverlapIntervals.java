@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * 435. 无重叠区间
  */
-public class EraseOverlapIntervals {
+class EraseOverlapIntervals {
     public int eraseOverlapIntervals(int[][] intervals) {
         if(intervals == null || intervals.length == 0)
             return 0;
