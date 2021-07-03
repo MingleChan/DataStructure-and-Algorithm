@@ -5,12 +5,12 @@ import java.util.Arrays;
 /**
  * 452. 用最少数量的箭引爆气球
  */
-public class FindMinArrowShots {
+class FindMinArrowShots {
     public int findMinArrowShots(int[][] points) {
         if(points.length == 0)
             return 0;
         int cnt = 1;
-        Arrays.sort(points, (a, b)->a[1] > b[1] ? 1 : -1);
+        Arrays.sort(points, (a, b)->a[1] - b[1]);
         int curArrowPos = points[0][1];
         for(int i = 1; i < points.length; ++i) {
             if(points[i][0] > curArrowPos) {
