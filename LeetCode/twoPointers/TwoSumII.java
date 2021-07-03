@@ -3,9 +3,9 @@ package twoPointers;
 import java.util.Arrays;
 
 /**
- * 167. 两数之和 II - 输入有序数组
+ * 167. 两数之和 II
  */
-public class TwoSumII {
+class TwoSumII {
     public int[] twoSum(int[] numbers, int target) {
         int start = 0, end = numbers.length - 1;
         while(start < end) {
