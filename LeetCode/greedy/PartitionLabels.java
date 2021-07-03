@@ -4,7 +4,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class PartitionLabels {
+/**
+ * 763. 划分字母区间
+ */
+class PartitionLabels {
     public List<Integer> partitionLabels(String s) {
         int length = s.length();
         int[] last = new int[26];
