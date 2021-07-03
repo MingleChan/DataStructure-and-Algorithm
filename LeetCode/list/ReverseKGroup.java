@@ -1,9 +1,9 @@
 package list;
 
 /**
- * LeetCode 25. K 个一组翻转链表
+ * 25. K 个一组翻转链表
  */
-public class ReverseKGroup {
+class ReverseKGroup {
     public ListNode reverseKGroup(ListNode head, int k) {
         ListNode newHead = new ListNode();
         newHead.next = head;
@@ -28,7 +28,7 @@ public class ReverseKGroup {
         return newHead.next;
     }
 
-    public ListNode innerReverse(ListNode head){
+    private ListNode innerReverse(ListNode head){
         ListNode pre = null;
         ListNode curr = head;
         while(curr != null){
@@ -38,5 +38,17 @@ public class ReverseKGroup {
             curr = next;
         }
         return pre;
+    }
+
+    public static void main(String[] args) {
+        ListNode L5 = new ListNode(5);
+        ListNode L4 = new ListNode(4, L5);
+        ListNode L3 = new ListNode(3, L4);
+        ListNode L2 = new ListNode(2, L3);
+        ListNode L1 = new ListNode(1, L2);
+        int k = 2;
+        ReverseKGroup r = new ReverseKGroup();
+        ListNode head = r.reverseKGroup(L1, k);
+        ListNode.printList(head);
     }
 }
