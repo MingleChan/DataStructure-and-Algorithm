@@ -1,11 +1,13 @@
 package greedy;
 
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 
-public class ReconstructQueue {
+/**
+ * 406. 根据身高重建队列
+ */
+class ReconstructQueue {
     public int[][] reconstructQueue(int[][] people) {
         Arrays.sort(people, (p1, p2) -> {
             if(p1[0] != p2[0]) {
