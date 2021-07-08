@@ -5,17 +5,14 @@ package array;
 class MaxArea {
     public int maxArea(int[] height) {
         int l = 0, r = height.length - 1;
-        int max = 0;
-        int h;
-        int temp;
-        int w;
-        while(l < r){
-            w = r - l;
-            h = height[l] > height[r] ? height[r--] : height[l++];
-            temp = w * h;
-            max = Math.max(temp, max);
+        int maxArea = 0;
+        while(l < r) {
+            int w = r - l;
+            int h = height[r] > height[l] ? height[l++] : height[r--];
+            int area = w * h;
+            maxArea = Math.max(area, maxArea);
         }
-        return max;
+        return maxArea;
     }
 
     public static void main(String[] args) {
